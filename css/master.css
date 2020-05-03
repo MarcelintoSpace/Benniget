@@ -238,15 +238,15 @@ hr {
     background-color: white;
   }
 
-  .block_valeur {
+  .aside_valeur {
     display: none;
   }
 
-  .block_hobby {
+  .aside_hobby {
     display: none;
   }
 
-  .block_hobby i {
+  .aside_hobby i {
     margin-right: 5px;
     text-align: center;
   }
