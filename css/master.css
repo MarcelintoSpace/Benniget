@@ -1,4 +1,4 @@
-/*définition des bases*/
+/*dï¿½finition des bases*/
 body {
   margin-left: 0;
   margin-top: 0;
@@ -28,20 +28,20 @@ h3 {
   font-family: 'Raleway', sans-serif;
 }
 
-#gauche {
+#section-gauche {
   width: 25%;
   height: auto;
   padding-top: 50px;
   background-color: #64B5F6;
 }
 
-#droite {
+#section-droite {
   width: 72%;
   margin-left: 5%;
   background-color: white;
 }
 
-/*début du block de gauche*/
+/*dï¿½but du block de gauche*/
 img {
   display: block;
   margin-left: auto;
@@ -70,26 +70,29 @@ img {
 
 .side_bar {
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
 }
 
-.block_adresse {
+.aside_adresse {
   color: #1A237E;
   padding-left: 20px;
 }
 
-.block_lien {
+.aside_lien {
   padding-left: 20px;
 }
 
-.block_lien i {
+.aside_lien i {
   padding-top: 50px;
   margin-right: 10px;
   margin-bottom: 10px;
   color: #1A237E;
 }
 
-.block_valeur {
-  height: 750px;
+.aside_valeur {
+  flex-grow: 1;
+  height: 1300px;
   text-align: justify;
 }
 
@@ -100,19 +103,18 @@ img {
   color: #1A237E;
 }
 
-.block_hobby {
+.aside_hobby {
   text-align: center;
-  vertical-align: middle;
   padding-bottom: 50px;
 }
 
-.block_hobby i {
+.aside_hobby i {
   margin-right: 20px;
   margin-top: auto;
   color: #1A237E;
 }
 
-/* début du block central*/
+/* dï¿½but du block central*/
 /*block titre*/
 header {
   width: 72%;
@@ -146,7 +148,7 @@ header {
   text-decoration: underline #64B5F6;
 }
 
-/*début block_formation*/
+/*dï¿½but block_formation*/
 i {
   color: #1A237E;
   padding-right: 30px;
@@ -162,18 +164,18 @@ hr {
   border: 2px solid #1A237E;
 }
 
-.block_formation {
+.article_formation {
   display: flex;
   color: #1A237E;
 }
 
-/*début block_experience et block_competence*/
-.block_experience {
+/*dï¿½but block_experience et block_competence*/
+.article_experience {
   display: flex;
   color: #1A237E;
 }
 
-.block_competence {
+.article_competence {
   display: flex;
   flex-flow: row wrap;
   color: #1A237E;
@@ -214,11 +216,11 @@ hr {
     flex-flow: column wrap;
   }
 
-  #droite {
+  #section-droite {
     min-width: 90%;
   }
 
-  /*début du block de gauche*/
+  /*dï¿½but du block de gauche*/
   img {
     display: flex;
     order: 2;
@@ -253,7 +255,7 @@ hr {
     display: none;
   }
 
-  /* début du block central*/
+  /* dï¿½but du block central*/
   /*block titre*/
   .section {
     display: flex;
@@ -268,14 +270,14 @@ hr {
     order: 1;
   }
 
-  /*début block_formation*/
-  .block_formation {
+  /*dï¿½but block_formation*/
+  .article_formation {
     flex-direction: column;
     text-align: justify;
   }
 
-  /*début block_experience*/
-  .block_experience {
+  /*dï¿½but block_experience*/
+  .article_experience {
     flex-direction: column;
     align-items: stretch;
     text-align: justify;
@@ -291,7 +293,7 @@ hr {
     width: 100%;
   }
 
-  /*début block_competence*/
+  /*dï¿½but block_competence*/
   .colonne_gauche_competence {
     margin-right: 2px;
     width: 45%;
@@ -306,12 +308,12 @@ hr {
 @media screen and (min-width: 801px) and (max-width: 1259px) {
 
   /*les bases*/
-  #gauche {
+  #section-gauche {
     min-width: 35%;
     max-width: 250px;
   }
 
-  #droite {
+  #section-droite {
     width: 65%;
     margin-right: 10px;
   }
@@ -321,8 +323,8 @@ hr {
     text-align: justify;
   }
 
-  /*début block_competence*/
-  .block_competence {
+  /*dï¿½but block_competence*/
+  .article_competence {
     color: #1A237E;
     padding-top: 10px;
   }
@@ -341,17 +343,17 @@ hr {
 @media screen and (min-width: 1260px) {
 
   /*les bases*/
-  #gauche {
+  #section-gauche {
     max-width: 370px;
   }
 
-  #droite {
+  #section-droite {
     width: 70%;
     margin-right: 10px;
   }
 
-  /*début block_competence*/
-  .block_competence {
+  /*dï¿½but block_competence*/
+  .article_competence {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
