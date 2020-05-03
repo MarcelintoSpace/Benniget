@@ -224,7 +224,7 @@ hr {
   img {
     display: flex;
     order: 2;
-    max-width: 80px;
+    max-width: 90px;
   }
 
   .adresse {
@@ -247,11 +247,14 @@ hr {
   }
 
   .aside_hobby i {
-    margin-right: 5px;
-    text-align: center;
+    display: none;
   }
 
   .titre_side_bar {
+    display: none;
+  }
+
+  .biographie {
     display: none;
   }
 
